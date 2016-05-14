@@ -10,6 +10,7 @@ import android.widget.TextView;
 
 import com.example.ylq17.myapplication.Modle.DemoItem;
 import com.example.ylq17.myapplication.activitys.Demo_LayoutInflater_;
+import com.example.ylq17.myapplication.activitys.Demo_MySimpleTextViewActivity_;
 import com.example.ylq17.myapplication.activitys.MainActivity_;
 import com.example.ylq17.myapplication.util.CommonAdapter;
 import com.example.ylq17.myapplication.util.ViewHolder;
@@ -30,8 +31,9 @@ public class StartActivity extends AppCompatActivity {
 
     void initDemos() {
         allDemos = new ArrayList<>();
-        allDemos.add(new DemoItem(MainActivity_.class, "Text Button Style and click!"));
-        allDemos.add(new DemoItem(Demo_LayoutInflater_.class, "Text Button Style and click!"));
+        allDemos.add(new DemoItem(MainActivity_.class, "MainActivity_"));
+        allDemos.add(new DemoItem(Demo_LayoutInflater_.class, "Demo_LayoutInflater_ 2016年5月13日 21:37:20"));
+        allDemos.add(new DemoItem(Demo_MySimpleTextViewActivity_.class, "Demo_MySimpleTextViewActivity_ 2016年5月14日 21:38:06"));
     }
     @AfterViews
     void init() {
