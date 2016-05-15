@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.example.ylq17.myapplication.view.Demo_MySimpleImageView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        custom:titleTextSize="30sp"
+        custom:image="@mipmap/ic_launcher"
+        custom:imageScaleType="center"
+        custom:titleText="Hello Actuis"
+        custom:titleTextCLR="#00ffff"/>
+    <com.example.ylq17.myapplication.view.Demo_MySimpleImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        custom:titleTextSize="30sp"
+        custom:image="@mipmap/ic_launcher"
+        custom:imageScaleType="center"
+        custom:titleText="Hello Actuis"
+        custom:titleTextCLR="#00ffff"/>
+    <com.example.ylq17.myapplication.view.Demo_MySimpleImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        custom:titleTextSize="30sp"
+        custom:image="@mipmap/ic_launcher"
+        custom:imageScaleType="fileXY"
+        custom:titleText="Hello Actuis"
+        custom:titleTextCLR="#00ffff"/>
+</LinearLayout>

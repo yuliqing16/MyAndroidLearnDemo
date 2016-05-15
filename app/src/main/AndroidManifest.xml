@@ -18,6 +18,7 @@
         <activity android:name=".activitys.MainActivity_"/>
         <activity android:name=".activitys.Demo_LayoutInflater_"/>
         <activity android:name=".activitys.Demo_MySimpleTextViewActivity_"/>
+        <activity android:name=".activitys.Demo_MySimpleImageViewActivity_"/>
     </application>
 
 </manifest>

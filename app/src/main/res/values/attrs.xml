@@ -3,10 +3,23 @@
     <attr name="titleText" format="string"/>
     <attr name="titleTextCLR" format="color"/>
     <attr name="titleTextSize" format="dimension"/>
+    <attr name="image" format="reference"/>
+    <attr name="imageScaleType">
+        <enum name="fileXY" value="0"/>
+        <enum name="center" value="1"/>
+    </attr>
 
     <declare-styleable name="Demo_MySimpleTextView">
         <attr name="titleText"/>
         <attr name="titleTextCLR"/>
         <attr name="titleTextSize"/>
+    </declare-styleable>
+
+    <declare-styleable name="Demo_MySimpleImageView">
+        <attr name="titleText"/>
+        <attr name="titleTextCLR"/>
+        <attr name="titleTextSize"/>
+        <attr name="image"/>
+        <attr name="imageScaleType"/>
     </declare-styleable>
 </resources>

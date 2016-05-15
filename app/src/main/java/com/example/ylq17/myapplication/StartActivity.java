@@ -10,6 +10,8 @@ import android.widget.TextView;
 
 import com.example.ylq17.myapplication.Modle.DemoItem;
 import com.example.ylq17.myapplication.activitys.Demo_LayoutInflater_;
+import com.example.ylq17.myapplication.activitys.Demo_MySimpleImageViewActivity;
+import com.example.ylq17.myapplication.activitys.Demo_MySimpleImageViewActivity_;
 import com.example.ylq17.myapplication.activitys.Demo_MySimpleTextViewActivity_;
 import com.example.ylq17.myapplication.activitys.MainActivity_;
 import com.example.ylq17.myapplication.util.CommonAdapter;
@@ -34,6 +36,7 @@ public class StartActivity extends AppCompatActivity {
         allDemos.add(new DemoItem(MainActivity_.class, "MainActivity_"));
         allDemos.add(new DemoItem(Demo_LayoutInflater_.class, "Demo_LayoutInflater_ 2016年5月13日 21:37:20"));
         allDemos.add(new DemoItem(Demo_MySimpleTextViewActivity_.class, "Demo_MySimpleTextViewActivity_ 2016年5月14日 21:38:06"));
+        allDemos.add(new DemoItem(Demo_MySimpleImageViewActivity_.class, "Demo_MySimpleImageViewActivity_ 2016年5月15日 12:33:26"));
     }
     @AfterViews
     void init() {
