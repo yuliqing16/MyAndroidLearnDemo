@@ -8,7 +8,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
         android:padding="10dp"
-        custom:titleTextSize="30sp"
+
         custom:image="@mipmap/ic_launcher"
         custom:imageScaleType="center"
         custom:titleText="Hello Actuis"

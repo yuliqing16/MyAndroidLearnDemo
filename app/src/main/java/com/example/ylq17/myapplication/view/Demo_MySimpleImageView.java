@@ -17,6 +17,9 @@ import android.view.View;
 
 import com.example.ylq17.myapplication.R;
 
+import org.androidannotations.annotations.Background;
+import org.androidannotations.annotations.EView;
+
 /**
  * Created by fyq on 16/5/15.
  */
@@ -47,6 +50,10 @@ public class Demo_MySimpleImageView extends View{
 
     public Demo_MySimpleImageView(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
+        //Default Value
+        mTitleTextSize = (int) TypedValue.applyDimension(
+                TypedValue.COMPLEX_UNIT_SP,16,getResources().getDisplayMetrics()
+        );
 
         TypedArray a = context.getTheme().obtainStyledAttributes(attrs, R.styleable.Demo_MySimpleImageView,defStyleAttr, 0);
         int size = a.getIndexCount();
@@ -82,6 +89,7 @@ public class Demo_MySimpleImageView extends View{
 
         mPaint.setTextSize(mTitleTextSize);
         mPaint.getTextBounds(mTitleText, 0 ,mTitleText.length(), mTextBound);
+
     }
 
     @Override
