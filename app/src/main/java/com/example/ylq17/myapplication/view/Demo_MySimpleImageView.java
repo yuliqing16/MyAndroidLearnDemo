@@ -19,10 +19,12 @@ import com.example.ylq17.myapplication.R;
 
 import org.androidannotations.annotations.Background;
 import org.androidannotations.annotations.EView;
+import org.androidannotations.api.BackgroundExecutor;
 
 /**
  * Created by fyq on 16/5/15.
  */
+@EView
 public class Demo_MySimpleImageView extends View{
 
     public static final int IMAGE_SCALE_FITXY = 0;
@@ -39,6 +41,7 @@ public class Demo_MySimpleImageView extends View{
 
     private int mWidth;
     private int mHeight;
+    private boolean mIsRunning = true;
 
     public Demo_MySimpleImageView(Context context) {
         this(context, null);
@@ -89,6 +92,7 @@ public class Demo_MySimpleImageView extends View{
 
         mPaint.setTextSize(mTitleTextSize);
         mPaint.getTextBounds(mTitleText, 0 ,mTitleText.length(), mTextBound);
+        play();
 
     }
 
@@ -168,6 +172,39 @@ public class Demo_MySimpleImageView extends View{
 
             canvas.drawBitmap(mBitmap, null, mImageBound, mPaint);
         }
+    }
+
+    int opop = 0;
+    @Background(id = "thread_play")
+    void play() {
+        while (true && mIsRunning) {
+            Log.e("xxxx", "LOOP:" + opop);
+            opop++;
+            try {
+                Thread.sleep(1000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+
+    @Override
+    protected void onVisibilityChanged(View changedView, int visibility) {
+        super.onVisibilityChanged(changedView, visibility);
+        Log.e("xxx", "onVisibilityChanged");
+    }
+
+    @Override
+    protected void onAttachedToWindow() {
+        super.onAttachedToWindow();
+        Log.e("xxx", "onAttachedToWindow");
+    }
+
+    @Override
+    protected void onDetachedFromWindow() {
+        super.onDetachedFromWindow();
+        Log.e("xxx", "onDetachedFromWindow");
+        mIsRunning = false;
     }
 }
 
