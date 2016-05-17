@@ -31,10 +31,25 @@ public class Demo_CanvasView extends View{
     public Demo_CanvasView(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
         //changeXY();
+        rotateStart();
     }
 
     float X;
     float Y;
+    int rotate = 0;
+    @Background
+    void rotateStart(){
+        while (true) {
+            rotate = (rotate + 6 ) % 360;
+            postInvalidate();
+            try {
+                Thread.sleep(1000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+
     @Background
     void changeXY() {
         int calcX = 1;
@@ -110,6 +125,11 @@ public class Demo_CanvasView extends View{
             canvas.drawLine(X, Y, (float)(getWidth() / 2 - x), (float)(getHeight() / 2 - y), mPaint);
         }
 
+        canvas.drawLine(500,800, 500, 300, mPaint);
+        canvas.save();
+        canvas.rotate(rotate, 500, 800);
+        canvas.drawLine(500,800, 500, 300, mPaint);
+        canvas.restore();
         mPaint = null;
     }
 

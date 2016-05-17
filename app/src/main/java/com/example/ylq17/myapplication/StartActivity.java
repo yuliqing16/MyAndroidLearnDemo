@@ -41,7 +41,7 @@ public class StartActivity extends AppCompatActivity {
         allDemos.add(new DemoItem(Demo_MySimpleTextViewActivity_.class, "Demo_MySimpleTextViewActivity_ 2016年5月14日 21:38:06"));
         allDemos.add(new DemoItem(Demo_MySimpleImageViewActivity_.class, "Demo_MySimpleImageViewActivity_ 2016年5月15日 12:33:26"));
         allDemos.add(new DemoItem(Demo_MyProcessBarViewActivity_.class, "Demo_MyProcessBarViewActivity_ 2016年5月15日 14:58:02"));
-        allDemos.add(new DemoItem(Demo_CanvasActivity_.class, "Demo_CanvasActivity_ 2016年5月16日 22:16:02"));
+        allDemos.add(new DemoItem(Demo_CanvasActivity_.class, "Demo_CanvasActivity_  2016年5月16日 22:16:02"));
     }
     @AfterViews
     void init() {
