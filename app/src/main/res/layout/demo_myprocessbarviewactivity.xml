@@ -1,9 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:custom="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical" android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
     android:layout_height="match_parent">
     <com.example.ylq17.myapplication.view.Demo_MyProcessBarView_
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_width="400dp"
+        android:layout_height="400dp"
+        custom:firstColor="#ff0000"
+        custom:secondColor="#00ffff"
+        custom:speed="80"
+        custom:circulWidth="20px"
+        />
+    <com.example.ylq17.myapplication.view.Demo_MyProcessBarView_
+        android:layout_width="200dp"
+        android:layout_height="300dp"
+        custom:firstColor="#34f439"
+        custom:secondColor="#f91fff"
+        custom:speed="12"
+        custom:circulWidth="20px"
+        />
 </LinearLayout>
